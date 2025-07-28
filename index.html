@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARSO Growth | Modern Data-Driven Marketing</title>
+    
+    <!-- Preconnect to improve loading performance for external resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://unpkg.com">
+
+    <!-- Google Fonts - Poppins (Preload for better performance) -->
+    <link rel="preload" href="https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8PhgZrHT2FV.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8PhgZrHT2FV.woff" as="font" type="font/woff" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Font Awesome (Icons) - Load asynchronously for better performance -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"></noscript>
+    
+    <!-- AOS (Animate on Scroll Library) - Load asynchronously -->
+    <link rel="preload" href="https://unpkg.com/aos@next/dist/aos.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"></noscript>
+
+    <!-- Favicon (optional but good practice) - Ensure these files exist in your root -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+
+</head>
+<body>
+
+    <!-- ======================= HEADER ======================= -->
+    <header class="header">
+        <nav class="container header__nav" aria-label="Main navigation">
+            <a href="#" class="header__logo" aria-label="ARSO Growth Home">ARSO Growth</a>
+            
+            <ul class="nav__links" role="menu">
+                <li role="none"><a href="#services" class="nav__link" role="menuitem">Services</a></li>
+                <li role="none"><a href="#case-studies" class="nav__link" role="menuitem">Case Studies</a></li>
+                <li role="none"><a href="#process" class="nav__link" role="menuitem">Process</a></li>
+                <li role="none"><a href="#about" class="nav__link" role="menuitem">About</a></li>
+                <li role="none"><a href="#contact" class="btn btn--primary" role="menuitem">Get In Touch</a></li>
+            </ul>
+
+            <div class="header__controls">
+                <!-- Theme Toggle -->
+                <div class="theme-switcher">
+                    <i class="fas fa-sun" aria-hidden="true"></i>
+                    <label class="switch" for="theme-toggle">
+                        <span class="sr-only">Toggle dark and light theme</span>
+                        <input type="checkbox" id="theme-toggle">
+                        <span class="slider round"></span>
+                    </label>
+                    <i class="fas fa-moon" aria-hidden="true"></i>
+                </div>
+                <!-- Mobile Menu Toggle -->
+                <button class="hamburger-menu" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle mobile menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="mobile-menu" hidden>
+            <ul class="mobile-nav__links" role="menu">
+                <li role="none"><a href="#services" class="mobile-nav__link" role="menuitem">Services</a></li>
+                <li role="none"><a href="#case-studies" class="mobile-nav__link" role="menuitem">Case Studies</a></li>
+                <li role="none"><a href="#process" class="mobile-nav__link" role="menuitem">Process</a></li>
+                <li role="none"><a href="#about" class="mobile-nav__link" role="menuitem">About</a></li>
+                <li role="none"><a href="#contact" class="btn btn--primary" role="menuitem">Get In Touch</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!-- ======================= HERO SECTION ======================= -->
+        <section class="section hero" aria-labelledby="hero-title">
+            <div class="container hero__container">
+                <div class="hero__content" data-aos="fade-right">
+                    <h1 id="hero-title" class="hero__title">Data is the new creative.</h1>
+                    <p class="hero__subtitle">We blend cutting-edge data science with marketing artistry to unlock exponential growth for your business. Don't just market, dominate.</p>
+                    <a href="#contact" class="btn btn--primary btn--large">Start Your Growth Journey</a>
+                </div>
+                <div class="hero__stats" data-aos="fade-left" data-aos-delay="200">
+                    <div class="stat" data-aos="flip-up" data-aos-delay="300"><h3>150%</h3><p>Avg. ROI Increase</p></div>
+                    <div class="stat" data-aos="flip-up" data-aos-delay="400"><h3>95%</h3><p>Client Retention</p></div>
+                    <div class="stat" data-aos="flip-up" data-aos-delay="500"><h3>$20M+</h3><p>Ad Spend Managed</p></div>
+                </div>
+            </div>
+            <div class="hero__background-shape" aria-hidden="true"></div>
+        </section>
+
+        <!-- ======================= SERVICES SECTION ======================= -->
+        <section id="services" class="section services" aria-labelledby="services-title">
+            <div class="container">
+                <h2 id="services-title" class="section__title" data-aos="fade-up">Our Growth Toolkit</h2>
+                <p class="section__subtitle" data-aos="fade-up" data-aos-delay="100">Tailored strategies to meet your specific goals.</p>
+                <div class="services__grid">
+                    <div class="card" data-aos="zoom-in" data-aos-delay="200" role="article">
+                        <i class="card__icon fas fa-chart-line" aria-hidden="true"></i>
+                        <h3 class="card__title">SEO & Content Strategy</h3>
+                        <p class="card__body">Drive sustainable organic traffic with data-backed content that ranks and converts.</p>
+                    </div>
+                    <div class="card" data-aos="zoom-in" data-aos-delay="300" role="article">
+                        <i class="card__icon fas fa-bullseye" aria-hidden="true"></i>
+                        <h3 class="card__title">Performance Marketing (PPC)</h3>
+                        <p class="card__body">Maximize your ROI with hyper-targeted ad campaigns on Google, Meta, and LinkedIn.</p>
+                    </div>
+                    <div class="card" data-aos="zoom-in" data-aos-delay="400" role="article">
+                        <i class="card__icon fas fa-magnifying-glass-chart" aria-hidden="true"></i>
+                        <h3 class="card__title">Conversion Rate Optimization</h3>
+                        <p class="card__body">Turn more visitors into customers through rigorous A/B testing and user behavior analysis.</p>
+                    </div>
+                    <div class="card" data-aos="zoom-in" data-aos-delay="500" role="article">
+                        <i class="card__icon fas fa-cogs" aria-hidden="true"></i>
+                        <h3 class="card__title">Marketing Automation</h3>
+                        <p class="card__body">Nurture leads and delight customers with sophisticated, automated workflows.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================= CASE STUDIES SECTION ======================= -->
+        <section id="case-studies" class="section case-studies" aria-labelledby="case-studies-title">
+            <div class="container">
+                <h2 id="case-studies-title" class="section__title" data-aos="fade-up">Our Success Stories</h2>
+                <p class="section__subtitle" data-aos="fade-up" data-aos-delay="100">See how we've helped businesses like yours achieve remarkable growth.</p>
+                <div class="case-studies__grid">
+                    <div class="card" data-aos="fade-right" data-aos-delay="200" role="article">
+                        <div class="card__image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1579783902671-55c91e443e2b?q=80&w=2070&auto=format&fit=crop" alt="Graph showing upward trend" loading="lazy">
+                        </div>
+                        <div class="card__content">
+                            <h3 class="card__title">E-commerce Brand X: 200% Revenue Growth in 6 Months</h3>
+                            <p class="card__body">Implemented a data-driven PPC strategy combined with CRO, resulting in massive sales uplift and improved ROAS.</p>
+                            <a href="#" class="btn btn--secondary btn--small">View Case Study</a>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="fade-up" data-aos-delay="300" role="article">
+                        <div class="card__image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1549929253-125028014022?q=80&w=2070&auto=format&fit=crop" alt="People collaborating on a digital marketing plan" loading="lazy">
+                        </div>
+                        <div class="card__content">
+                            <h3 class="card__title">SaaS Company Y: 150% Increase in Qualified Leads</h3>
+                            <p class="card__body">Developed a targeted LinkedIn Ads strategy and refined lead nurturing funnels, significantly boosting MQLs.</p>
+                            <a href="#" class="btn btn--secondary btn--small">View Case Study</a>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="fade-left" data-aos-delay="400" role="article">
+                        <div class="card__image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1507679799912-df6746961445?q=80&w=2070&auto=format&fit=crop" alt="Digital marketing analytics dashboard" loading="lazy">
+                        </div>
+                        <div class="card__content">
+                            <h3 class="card__title">Local Service Z: Doubled Online Bookings with SEO</h3>
+                            <p class="card__body">Optimized local SEO and content strategy, leading to first-page rankings and a surge in online appointment bookings.</p>
+                            <a href="#" class="btn btn--secondary btn--small">View Case Study</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="section__cta" data-aos="zoom-in" data-aos-delay="500">
+                    <a href="#" class="btn btn--primary">Explore More Case Studies</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================= PROCESS SECTION ======================= -->
+        <section id="process" class="section process" aria-labelledby="process-title">
+            <div class="container">
+                <h2 id="process-title" class="section__title" data-aos="fade-up">Our Path to Your Success</h2>
+                <div class="process__grid">
+                    <div class="process__step" data-aos="fade-right" data-aos-delay="0" role="listitem">
+                        <div class="process__number" aria-hidden="true">01</div>
+                        <h3 class="process__title">Audit & Discover</h3>
+                        <p>We immerse ourselves in your data, business, and competitive landscape to find hidden growth levers.</p>
+                    </div>
+                    <div class="process__step" data-aos="fade-left" data-aos-delay="100" role="listitem">
+                        <div class="process__number" aria-hidden="true">02</div>
+                        <h3 class="process__title">Strategize & Roadmap</h3>
+                        <p>We craft a bespoke, data-driven strategy and a clear roadmap with measurable KPIs.</p>
+                    </div>
+                    <div class="process__step" data-aos="fade-right" data-aos-delay="200" role="listitem">
+                        <div class="process__number" aria-hidden="true">03</div>
+                        <h3 class="process__title">Execute & Optimize</h3>
+                        <p>Our team launches, manages, and relentlessly optimizes campaigns for peak performance.</p>
+                    </div>
+                    <div class="process__step" data-aos="fade-left" data-aos-delay="300" role="listitem">
+                        <div class="process__number" aria-hidden="true">04</div>
+                        <h3 class="process__title">Analyze & Scale</h3>
+                        <p>We deliver transparent reports and use insights to scale what works, ensuring long-term growth.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================= ABOUT SECTION ======================= -->
+        <section id="about" class="section about" aria-labelledby="about-title">
+            <div class="container about__container">
+                <div class="about__image-wrapper" data-aos="fade-right">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop" alt="ARSO Growth team collaborating around a whiteboard" loading="lazy">
+                </div>
+                <div class="about__content" data-aos="fade-left">
+                    <h2 id="about-title" class="section__title--left">We're Not Just Marketers. We're Growth Architects.</h2>
+                    <p>ARSO Growth was founded on a simple principle: marketing should be a profit center, not a cost center. We are a team of analysts, strategists, and creatives who are obsessed with data.</p>
+                    <p>We reject "one-size-fits-all" solutions. Instead, we dive deep into your business data to build bespoke strategies that deliver real, quantifiable results. Transparency and partnership are at the core of everything we do.</p>
+                    <a href="#contact" class="btn btn--secondary">Meet The Team</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================= CONTACT SECTION ======================= -->
+        <section id="contact" class="section contact" aria-labelledby="contact-title">
+            <div class="container" data-aos="zoom-in">
+                <h2 id="contact-title" class="section__title">Ready to Ignite Your Growth?</h2>
+                <p class="section__subtitle">Let's build something great together. Fill out the form or email us.</p>
+                <form class="contact__form" aria-label="Contact form" data-aos="fade-up" data-aos-delay="100">
+                    <div class="form__group">
+                        <label for="name" class="sr-only">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required autocomplete="name" data-aos="fade-right" data-aos-delay="200">
+                        
+                        <label for="email" class="sr-only">Your Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required autocomplete="email" data-aos="fade-left" data-aos-delay="300">
+                    </div>
+                    <label for="message" class="sr-only">Tell us about your project</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Tell us about your project..." required data-aos="fade-up" data-aos-delay="400"></textarea>
+                    <button type="submit" class="btn btn--primary btn--large" data-aos="zoom-in" data-aos-delay="500">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- ======================= FOOTER ======================= -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__col">
+                    <h3 class="footer__logo">ARSO Growth</h3>
+                    <p>Data-driven marketing for ambitious brands.</p>
+                    <div class="footer__socials">
+                        <a href="https://www.linkedin.com/company/arsogrowth" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                        <a href="https://twitter.com/arsogrowth" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                        <a href="https://www.facebook.com/arsogrowth" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__heading">Explore</h4>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#case-studies">Case Studies</a></li>
+                        <li><a href="#process">Process</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__heading">Contact</h4>
+                    <ul>
+                        <li><a href="mailto:hello@arsogrowth.com">hello@arsogrowth.com</a></li>
+                        <li><a href="tel:+1234567890">+1 (234) 567-890</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__heading">Join our Newsletter</h4>
+                    <p>Get exclusive insights delivered to your inbox.</p>
+                    <form class="newsletter__form" aria-label="Newsletter subscription form">
+                        <label for="newsletter-email" class="sr-only">Your email address</label>
+                        <input type="email" id="newsletter-email" placeholder="your.email@example.com" required autocomplete="email">
+                        <button type="submit" aria-label="Subscribe to newsletter"><i class="fas fa-paper-plane" aria-hidden="true"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; <span id="current-year"></span> ARSO Growth. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
